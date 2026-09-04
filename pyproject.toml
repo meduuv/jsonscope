@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonscope-cli"
+version = "0.1.0"
+description = "Dependency-free JSON inspection CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Medu"}]
+dependencies = []
+
+[project.scripts]
+jsonscope = "jsonscope.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
